@@ -1,0 +1,39 @@
+reset111111111111111111
+buffer size is 5000 1 (10000,)
+self.use_same_share_obs False
+share_obs_shape (10000,)
+buffer size is 5000 1 (10000,)
+self.use_same_share_obs False
+share_obs_shape (10000,)
+warm up...
+share_obs shape```````````` (2, 2, 10000)
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+p_id 0
+share_obs[:,int(p_id[-1]),:] shape (2, 1, 10000)
+rewards is [[-0.4 -0.4]
+ [-0.4 -0.4]]
+p_id 1
+share_obs[:,int(p_id[-1]),:] shape (2, 1, 10000)
+rewards is [[-0.4 -0.4]
+ [-0.4 -0.4]]
+share type <class 'dict'>
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 196, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 179, in main
+    runner = Runner(config=config)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 17, in __init__
+    self.warmup(num_warmup_episodes)
+  File "E:\Anaconda\lib\site-packages\torch\autograd\grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 368, in warmup
+    env_info = self.collecter(explore=True, training_episode=False, warmup=True)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 301, in separated_collect_rollout
+    self.buffer.insert(n_rollout_threads,
+  File "F:\off-policy\offpolicy\utils\mlp_buffer.py", line 63, in insert
+    idx_range = self.policy_buffers[p_id].insert(num_insert_steps,
+  File "F:\off-policy\offpolicy\utils\mlp_buffer.py", line 201, in insert
+    self.next_share_obs[idx_range] = next_share_obs.copy()
+ValueError: shape mismatch: value array of shape (2,2,10000) could not be broadcast to indexing result of shape (2,1,10000)

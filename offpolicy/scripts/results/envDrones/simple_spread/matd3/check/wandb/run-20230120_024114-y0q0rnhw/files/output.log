@@ -1,0 +1,20 @@
+reset111111111111111111
+warm up...
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 196, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 179, in main
+    runner = Runner(config=config)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 17, in __init__
+    self.warmup(num_warmup_episodes)
+  File "E:\Anaconda\lib\site-packages\torch\autograd\grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 357, in warmup
+    env_info = self.collecter(explore=True, training_episode=False, warmup=True)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 129, in shared_collect_rollout
+    self.buffer.insert(n_rollout_threads,
+  File "F:\off-policy\offpolicy\utils\mlp_buffer.py", line 62, in insert
+    idx_range = self.policy_buffers[p_id].insert(num_insert_steps,
+  File "F:\off-policy\offpolicy\utils\mlp_buffer.py", line 192, in insert
+    self.obs[idx_range] = obs.copy()
+ValueError: shape mismatch: value array of shape (2,2,10000) could not be broadcast to indexing result of shape (2,2,4)

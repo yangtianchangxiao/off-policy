@@ -1,0 +1,219 @@
+2023-01-20 10:12:18,645 INFO    StreamThr :48336 [internal.py:wandb_internal():87] W&B internal server running at pid: 48336, started at: 2023-01-20 10:12:18.643245
+2023-01-20 10:12:18,648 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status
+2023-01-20 10:12:18,663 INFO    WriterThread:48336 [datastore.py:open_for_write():85] open: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\run-ljuki1gi.wandb
+2023-01-20 10:12:18,665 DEBUG   SenderThread:48336 [sender.py:send():334] send: header
+2023-01-20 10:12:18,666 DEBUG   SenderThread:48336 [sender.py:send():334] send: run
+2023-01-20 10:12:19,260 INFO    SenderThread:48336 [dir_watcher.py:__init__():216] watching files in: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files
+2023-01-20 10:12:19,261 INFO    SenderThread:48336 [sender.py:_start_run_threads():1065] run started: ljuki1gi with start time 1674180738.652238
+2023-01-20 10:12:19,261 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 10:12:19,263 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: check_version
+2023-01-20 10:12:19,263 INFO    SenderThread:48336 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 10:12:19,264 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: check_version
+2023-01-20 10:12:19,612 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: run_start
+2023-01-20 10:12:19,896 DEBUG   HandlerThread:48336 [system_info.py:__init__():31] System info init
+2023-01-20 10:12:19,896 DEBUG   HandlerThread:48336 [system_info.py:__init__():46] System info init done
+2023-01-20 10:12:19,896 INFO    HandlerThread:48336 [system_monitor.py:start():151] Starting system monitor
+2023-01-20 10:12:19,897 INFO    SystemMonitor:48336 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-20 10:12:19,897 INFO    HandlerThread:48336 [system_monitor.py:probe():172] Collecting system info
+2023-01-20 10:12:19,906 INFO    SystemMonitor:48336 [interfaces.py:start():168] Started cpu
+2023-01-20 10:12:19,907 INFO    SystemMonitor:48336 [interfaces.py:start():168] Started disk
+2023-01-20 10:12:19,908 INFO    SystemMonitor:48336 [interfaces.py:start():168] Started gpu
+2023-01-20 10:12:19,908 INFO    SystemMonitor:48336 [interfaces.py:start():168] Started memory
+2023-01-20 10:12:19,932 INFO    SystemMonitor:48336 [interfaces.py:start():168] Started network
+2023-01-20 10:12:19,998 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:19,999 DEBUG   HandlerThread:48336 [system_info.py:probe():195] Probing system
+2023-01-20 10:12:19,999 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:20,001 DEBUG   HandlerThread:48336 [git.py:repo():40] git repository is invalid
+2023-01-20 10:12:20,001 DEBUG   HandlerThread:48336 [system_info.py:probe():241] Probing system done
+2023-01-20 10:12:20,001 DEBUG   HandlerThread:48336 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.8.5', 'heartbeatAt': '2023-01-20T02:12:19.999821', 'startedAt': '2023-01-20T02:12:18.568237', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'F:/off-policy/offpolicy/scripts/train/train_mpe.py', 'codePath': 'off-policy\\offpolicy\\scripts\\train\\train_mpe.py', 'host': 'DESKTOP-U114VDJ', 'username': 'a', 'executable': 'E:\\Anaconda\\python.exe', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2701.0, 'min': 0.0, 'max': 2701.0}, 'cpu_freq_per_core': [{'current': 2701.0, 'min': 0.0, 'max': 2701.0}], 'disk': {'total': 0.9999961853027344, 'used': 0.24470901489257812}, 'gpu': 'GeForce 940MX', 'gpu_count': 1, 'gpu_devices': [{'name': 'GeForce 940MX', 'memory_total': 2147483648}], 'memory': {'total': 11.871315002441406}}
+2023-01-20 10:12:20,002 INFO    HandlerThread:48336 [system_monitor.py:probe():182] Finished collecting system info
+2023-01-20 10:12:20,002 INFO    HandlerThread:48336 [system_monitor.py:probe():185] Publishing system info
+2023-01-20 10:12:20,002 DEBUG   HandlerThread:48336 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-20 10:12:20,008 DEBUG   HandlerThread:48336 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-20 10:12:20,008 DEBUG   HandlerThread:48336 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-20 10:12:20,271 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_created():275] file/dir created: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-summary.json
+2023-01-20 10:12:20,272 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_created():275] file/dir created: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\requirements.txt
+2023-01-20 10:12:20,272 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_created():275] file/dir created: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\conda-environment.yaml
+2023-01-20 10:12:22,158 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:22,158 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:24,291 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:24,291 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:26,405 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:26,406 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:28,529 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:28,529 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:30,659 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:30,659 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:32,843 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:32,845 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:35,002 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:35,002 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:37,144 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:37,145 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:39,263 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:39,263 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:40,757 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_modified():292] file/dir modified: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\conda-environment.yaml
+2023-01-20 10:12:40,946 DEBUG   HandlerThread:48336 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-20 10:12:40,947 INFO    HandlerThread:48336 [system_monitor.py:probe():187] Finished publishing system info
+2023-01-20 10:12:40,967 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:40,967 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 10:12:40,967 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:40,968 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 10:12:40,968 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 10:12:40,968 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:40,968 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:40,968 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 10:12:40,969 DEBUG   SenderThread:48336 [sender.py:send():334] send: files
+2023-01-20 10:12:40,969 INFO    SenderThread:48336 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-01-20 10:12:40,991 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: stop_status
+2023-01-20 10:12:40,992 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: stop_status
+2023-01-20 10:12:41,257 DEBUG   SenderThread:48336 [sender.py:send():334] send: telemetry
+2023-01-20 10:12:41,407 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:41,409 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:41,754 INFO    Thread-20 :48336 [upload_job.py:push():143] Uploaded file C:\Users\a\AppData\Local\Temp\tmpb43dbby2wandb\xqjcreml-wandb-metadata.json
+2023-01-20 10:12:41,776 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_modified():292] file/dir modified: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\conda-environment.yaml
+2023-01-20 10:12:41,777 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_created():275] file/dir created: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-metadata.json
+2023-01-20 10:12:43,562 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:43,563 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:45,299 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:45,784 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:45,785 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:47,931 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:47,935 ERROR   gpu       :48336 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 10:12:49,553 DEBUG   SenderThread:48336 [sender.py:send():334] send: exit
+2023-01-20 10:12:49,553 INFO    SenderThread:48336 [sender.py:send_exit():557] handling exit code: 1
+2023-01-20 10:12:49,553 INFO    SenderThread:48336 [sender.py:send_exit():559] handling runtime: 29
+2023-01-20 10:12:49,556 INFO    SenderThread:48336 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 10:12:49,557 INFO    SenderThread:48336 [sender.py:send_exit():565] send defer
+2023-01-20 10:12:49,557 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,557 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 0
+2023-01-20 10:12:49,558 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,558 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-01-20 10:12:49,558 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 1
+2023-01-20 10:12:49,558 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,558 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 1
+2023-01-20 10:12:49,559 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,559 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-01-20 10:12:49,559 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 2
+2023-01-20 10:12:49,559 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,559 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 2
+2023-01-20 10:12:49,559 INFO    HandlerThread:48336 [system_monitor.py:finish():161] Stopping system monitor
+2023-01-20 10:12:49,559 DEBUG   SystemMonitor:48336 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-20 10:12:49,561 DEBUG   SystemMonitor:48336 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-20 10:12:49,562 DEBUG   SystemMonitor:48336 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-20 10:12:49,561 INFO    HandlerThread:48336 [interfaces.py:finish():175] Joined cpu
+2023-01-20 10:12:49,563 INFO    HandlerThread:48336 [interfaces.py:finish():175] Joined disk
+2023-01-20 10:12:49,739 ERROR   gpu       :48336 [interfaces.py:aggregate():146] Failed to serialize metric: division by zero
+2023-01-20 10:12:49,740 INFO    HandlerThread:48336 [interfaces.py:finish():175] Joined gpu
+2023-01-20 10:12:49,740 INFO    HandlerThread:48336 [interfaces.py:finish():175] Joined memory
+2023-01-20 10:12:49,740 INFO    HandlerThread:48336 [interfaces.py:finish():175] Joined network
+2023-01-20 10:12:49,741 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,741 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-01-20 10:12:49,741 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 3
+2023-01-20 10:12:49,742 DEBUG   SenderThread:48336 [sender.py:send():334] send: stats
+2023-01-20 10:12:49,742 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,742 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 3
+2023-01-20 10:12:49,743 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,743 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-01-20 10:12:49,743 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 4
+2023-01-20 10:12:49,743 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,743 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 4
+2023-01-20 10:12:49,743 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,744 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-01-20 10:12:49,744 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 5
+2023-01-20 10:12:49,744 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,745 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 5
+2023-01-20 10:12:49,745 DEBUG   SenderThread:48336 [sender.py:send():334] send: summary
+2023-01-20 10:12:49,748 INFO    SenderThread:48336 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 10:12:49,749 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,749 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-01-20 10:12:49,749 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 6
+2023-01-20 10:12:49,749 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:49,749 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 6
+2023-01-20 10:12:49,750 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:49,750 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-01-20 10:12:49,757 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 10:12:49,868 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_modified():292] file/dir modified: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-summary.json
+2023-01-20 10:12:49,869 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_created():275] file/dir created: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\output.log
+2023-01-20 10:12:50,069 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 7
+2023-01-20 10:12:50,069 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:50,069 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 7
+2023-01-20 10:12:50,071 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:50,072 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-01-20 10:12:50,565 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 10:12:50,877 INFO    Thread-17 :48336 [dir_watcher.py:_on_file_modified():292] file/dir modified: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\config.yaml
+2023-01-20 10:12:51,552 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 8
+2023-01-20 10:12:51,552 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 10:12:51,553 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:51,553 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 8
+2023-01-20 10:12:51,553 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:51,554 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-01-20 10:12:51,555 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 9
+2023-01-20 10:12:51,555 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:51,555 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 9
+2023-01-20 10:12:51,555 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:51,556 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-01-20 10:12:51,556 INFO    SenderThread:48336 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-20 10:12:51,576 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 10:12:51,889 INFO    SenderThread:48336 [dir_watcher.py:_on_file_modified():292] file/dir modified: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\output.log
+2023-01-20 10:12:51,891 INFO    SenderThread:48336 [dir_watcher.py:finish():392] scan: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files
+2023-01-20 10:12:51,892 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\conda-environment.yaml conda-environment.yaml
+2023-01-20 10:12:51,893 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\config.yaml config.yaml
+2023-01-20 10:12:51,894 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\output.log output.log
+2023-01-20 10:12:51,895 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\requirements.txt requirements.txt
+2023-01-20 10:12:51,905 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-metadata.json wandb-metadata.json
+2023-01-20 10:12:51,905 INFO    SenderThread:48336 [dir_watcher.py:finish():406] scan save: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-summary.json wandb-summary.json
+2023-01-20 10:12:51,909 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 10
+2023-01-20 10:12:51,915 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 10:12:51,919 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:51,921 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 10
+2023-01-20 10:12:51,937 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:51,942 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-01-20 10:12:51,942 INFO    SenderThread:48336 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-20 10:12:52,580 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 10:12:52,584 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 10:12:52,593 INFO    Thread-21 :48336 [upload_job.py:push():143] Uploaded file F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\conda-environment.yaml
+2023-01-20 10:12:52,617 INFO    Thread-23 :48336 [upload_job.py:push():143] Uploaded file F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\output.log
+2023-01-20 10:12:52,624 INFO    Thread-24 :48336 [upload_job.py:push():143] Uploaded file F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\requirements.txt
+2023-01-20 10:12:52,656 INFO    Thread-22 :48336 [upload_job.py:push():143] Uploaded file F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\config.yaml
+2023-01-20 10:12:53,005 INFO    Thread-25 :48336 [upload_job.py:push():143] Uploaded file F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\files\wandb-summary.json
+2023-01-20 10:12:53,217 INFO    Thread-16 :48336 [sender.py:transition_state():585] send defer: 11
+2023-01-20 10:12:53,218 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:53,218 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 11
+2023-01-20 10:12:53,219 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:53,219 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-01-20 10:12:53,219 INFO    SenderThread:48336 [file_pusher.py:join():165] waiting for file pusher
+2023-01-20 10:12:53,219 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 12
+2023-01-20 10:12:53,219 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:53,219 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 12
+2023-01-20 10:12:53,220 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:53,220 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-01-20 10:12:53,430 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 13
+2023-01-20 10:12:53,430 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:53,430 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 13
+2023-01-20 10:12:53,431 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:53,431 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-01-20 10:12:53,431 INFO    SenderThread:48336 [sender.py:transition_state():585] send defer: 14
+2023-01-20 10:12:53,432 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 10:12:53,433 INFO    HandlerThread:48336 [handler.py:handle_request_defer():170] handle defer: 14
+2023-01-20 10:12:53,433 DEBUG   SenderThread:48336 [sender.py:send():334] send: final
+2023-01-20 10:12:53,433 DEBUG   SenderThread:48336 [sender.py:send():334] send: footer
+2023-01-20 10:12:53,433 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: defer
+2023-01-20 10:12:53,434 INFO    SenderThread:48336 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-01-20 10:12:53,434 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 10:12:53,435 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 10:12:53,435 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: server_info
+2023-01-20 10:12:53,435 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: get_summary
+2023-01-20 10:12:53,436 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: sampled_history
+2023-01-20 10:12:53,436 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 10:12:53,437 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 10:12:53,437 DEBUG   SenderThread:48336 [sender.py:send_request():361] send_request: server_info
+2023-01-20 10:12:54,166 INFO    MainThread:48336 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-01-20 10:12:54,166 INFO    MainThread:48336 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-01-20 10:12:54,167 INFO    MainThread:48336 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-01-20 10:12:54,167 DEBUG   HandlerThread:48336 [handler.py:handle_request():144] handle_request: shutdown
+2023-01-20 10:12:54,167 INFO    HandlerThread:48336 [handler.py:finish():841] shutting down handler
+2023-01-20 10:12:54,450 INFO    WriterThread:48336 [datastore.py:close():299] close: F:\off-policy\offpolicy\scripts\results\envDrones\simple_spread\matd3\check\wandb\run-20230120_101218-ljuki1gi\run-ljuki1gi.wandb
+2023-01-20 10:12:55,177 INFO    SenderThread:48336 [sender.py:finish():1491] shutting down sender
+2023-01-20 10:12:55,177 INFO    SenderThread:48336 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-20 10:12:55,177 INFO    SenderThread:48336 [file_pusher.py:join():165] waiting for file pusher

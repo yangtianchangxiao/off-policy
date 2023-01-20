@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "E:\Anaconda\lib\multiprocessing\connection.py", line 312, in _recv_bytes
+    nread, err = ov.GetOverlappedResult(True)
+BrokenPipeError: [WinError 109] 管道已结束。
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 195, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 128, in main
+    env = make_train_env(all_args)
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 32, in make_train_env
+    return SubprocVecEnv([get_env_fn(i) for i in range(all_args.n_rollout_threads)])
+  File "F:\off-policy\offpolicy\envs\env_wrappers.py", line 194, in __init__
+    self.num_agents = self.remotes[0].recv()
+  File "E:\Anaconda\lib\multiprocessing\connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "E:\Anaconda\lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    raise EOFError
+EOFError

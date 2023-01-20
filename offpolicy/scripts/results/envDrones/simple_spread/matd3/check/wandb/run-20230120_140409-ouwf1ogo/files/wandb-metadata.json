@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2023-01-20T06:04:11.286279",
+    "startedAt": "2023-01-20T06:04:09.255245",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "F:/off-policy/offpolicy/scripts/train/train_mpe.py",
+    "codePath": "off-policy\\offpolicy\\scripts\\train\\train_mpe.py",
+    "host": "DESKTOP-U114VDJ",
+    "username": "a",
+    "executable": "E:\\Anaconda\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2701.0,
+        "min": 0.0,
+        "max": 2701.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2701.0,
+            "min": 0.0,
+            "max": 2701.0
+        }
+    ],
+    "disk": {
+        "total": 0.9999961853027344,
+        "used": 0.2541923522949219
+    },
+    "gpu": "GeForce 940MX",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "GeForce 940MX",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 11.871315002441406
+    }
+}

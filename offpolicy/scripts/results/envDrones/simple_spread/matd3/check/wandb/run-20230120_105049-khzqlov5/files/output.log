@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 196, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 162, in main
+    from offpolicy.runner.mlp.mpe_runner import MPERunner as Runner
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 7, in <module>
+    from offpolicy.runner.mlp.base_runner import MlpRunner
+  File "F:\off-policy\offpolicy\runner\mlp\base_runner.py", line 9, in <module>
+    from offpolicy.utils.mlp_buffer import MlpReplayBuffer, PrioritizedMlpReplayBuffer
+  File "F:\off-policy\offpolicy\utils\mlp_buffer.py", line 61
+    print(" np.array(share_obs[p_id].shape", np.array(share_obs[])
+                                                                ^
+SyntaxError: invalid syntax

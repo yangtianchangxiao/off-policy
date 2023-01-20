@@ -1,0 +1,2046 @@
+reset111111111111111111
+buffer size is 5000 1 (10000,)
+self.use_same_share_obs False
+share_obs_shape (10000,)
+buffer size is 5000 1 (10000,)
+self.use_same_share_obs False
+share_obs_shape (10000,)
+warm up...
+share_obs shape```````````` (2, 2, 10000)
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [ True  True]]
+dones_env is [[False]
+ [ True]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [ True  True]]
+dones_env is [[False]
+ [ True]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[ True  True]
+ [False False]]
+dones_env is [[ True]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[ True  True]
+ [False False]]
+dones_env is [[ True]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [ True  True]]
+dones_env is [[False]
+ [ True]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [ True  True]]
+dones_env is [[False]
+ [ True]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[ True  True]
+ [False False]]
+dones_env is [[ True]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[ True  True]
+ [False False]]
+dones_env is [[ True]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+warmup average episode rewards: 2094.333333333333
+dones is [[False False]
+ [False False]]
+dones_env is [[False]
+ [False]]
+next share obs shape (2, 2, 10000)
+next_env_obs shape (2, 10000)
+next_env_obs shape (2, 10000)
+share type <class 'dict'>
+actor_Qs  [tensor([[1.5898],
+        [1.2817],
+        [1.7653],
+        [2.0531],
+        [1.3808],
+        [0.3571],
+        [0.8261],
+        [0.5822],
+        [1.1702],
+        [1.7570],
+        [1.1761],
+        [1.4180],
+        [1.1646],
+        [1.5758],
+        [1.4699],
+        [1.1740],
+        [1.5035],
+        [2.0390],
+        [1.3698],
+        [0.6687],
+        [2.6174],
+        [1.2807],
+        [0.7082],
+        [0.8728],
+        [0.7865],
+        [1.6583],
+        [2.2194],
+        [1.6306],
+        [1.3223],
+        [1.1623],
+        [0.1781],
+        [1.3018]], grad_fn=<AddmmBackward0>), tensor([[-1.4560],
+        [ 0.4867],
+        [-0.5340],
+        [-0.2804],
+        [ 0.5843],
+        [-0.9157],
+        [-0.4539],
+        [ 1.2019],
+        [-0.9883],
+        [-0.9044],
+        [-0.6429],
+        [-0.5360],
+        [-0.9864],
+        [ 0.7960],
+        [-0.1951],
+        [-1.2419],
+        [-0.4932],
+        [-0.3268],
+        [-1.3704],
+        [ 0.6850],
+        [-0.0598],
+        [-0.6105],
+        [-0.5250],
+        [-1.6346],
+        [-0.5595],
+        [-0.9888],
+        [-0.3030],
+        [ 0.7420],
+        [-0.7944],
+        [-1.4216],
+        [ 0.9739],
+        [-0.6969]], grad_fn=<AddmmBackward0>)]  valid_trans_mask tensor([[1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.],
+        [1.]])
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 196, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 181, in main
+    total_num_steps = runner.run()
+  File "F:\off-policy\offpolicy\runner\mlp\base_runner.py", line 167, in run
+    env_info = self.collecter(explore=True, training_episode=True, warmup=False)
+  File "F:\off-policy\offpolicy\runner\mlp\mpe_runner.py", line 322, in separated_collect_rollout
+    self.train()
+  File "F:\off-policy\offpolicy\runner\mlp\base_runner.py", line 203, in batch_train
+    train_info, new_priorities, idxes = update(p_id, sample)
+  File "F:\off-policy\offpolicy\algorithms\maddpg\maddpg.py", line 405, in cent_train_policy_on_batch
+    actor_Qs = actor_Qs * valid_trans_mask
+TypeError: only integer tensors of a single element can be converted to an index

@@ -1,0 +1,34 @@
+
+reset111111111111111111
+warm up...
+reset111111111111111111
+Traceback (most recent call last):
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 194, in <module>
+    main(sys.argv[1:])
+  File "F:/off-policy/offpolicy/scripts/train/train_mpe.py", line 177, in main
+    runner = Runner(config=config)
+  File "F:\off-policy\offpolicy\runner\rnn\mpe_runner.py", line 15, in __init__
+    self.warmup(num_warmup_episodes)
+  File "F:\off-policy\offpolicy\runner\rnn\base_runner.py", line 221, in warmup
+    env_info = self.collecter(explore=True, training_episode=False, warmup=True)
+  File "E:\Anaconda\lib\site-packages\torch\autograd\grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "F:\off-policy\offpolicy\runner\rnn\mpe_runner.py", line 74, in shared_collect_rollout
+    _, rnn_states_batch, _ = policy.get_actions(obs_batch,
+  File "F:\off-policy\offpolicy\algorithms\r_maddpg\algorithm\rMADDPGPolicy.py", line 81, in get_actions
+    actor_out, new_rnn_states = self.actor(obs, prev_actions, rnn_states)
+  File "E:\Anaconda\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "F:\off-policy\offpolicy\algorithms\r_maddpg\algorithm\r_actor_critic.py", line 62, in forward
+    rnn_outs, h_final = self.rnn(inp, rnn_states)
+  File "E:\Anaconda\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "F:\off-policy\offpolicy\algorithms\utils\rnn.py", line 35, in forward
+    x = self.feature_norm(x)
+  File "E:\Anaconda\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "E:\Anaconda\lib\site-packages\torch\nn\modules\normalization.py", line 189, in forward
+    return F.layer_norm(
+  File "E:\Anaconda\lib\site-packages\torch\nn\functional.py", line 2503, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: Given normalized_shape=[4], expected input with shape [*, 4], but got input of size[1, 2, 10000]
