@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-01-20T11:54:45.653766",
+    "startedAt": "2023-01-20T11:54:44.500091",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\code\\off-policy\\off-policy\\offpolicy\\scripts\\train\\train_mpe.py",
+    "codePath": "offpolicy\\scripts\\train\\train_mpe.py",
+    "git": {
+        "remote": "https://github.com/yangtianchangxiao/off-policy.git",
+        "commit": "b26a570bcb521d7670c0d2add4fa3e1f2003af5d"
+    },
+    "email": "caox68983@gmail.com",
+    "root": "D:/code/off-policy/off-policy",
+    "host": "DESKTOP-CUALL28",
+    "username": "user",
+    "executable": "D:\\pycharm_python\\venv\\Scripts\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1690.0,
+        "min": 0.0,
+        "max": 1690.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1690.0,
+            "min": 0.0,
+            "max": 1690.0
+        }
+    ],
+    "disk": {
+        "total": 941.4160118103027,
+        "used": 23.572914123535156
+    },
+    "memory": {
+        "total": 15.740997314453125
+    }
+}

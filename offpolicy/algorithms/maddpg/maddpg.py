@@ -402,10 +402,13 @@ class MADDPG(Trainer):
             actor_Qs = update_policy.critic(all_agent_cent_obs, actor_update_cent_acts)
             # actor_loss = -actor_Qs.mean()
             print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
-            print("actor qs",actor_Qs)
-            print( "valid_trans_mask", valid_trans_mask.shape)
-            actor_Qs = actor_Qs * valid_trans_mask
-            actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()
+            print("actor qs",len(actor_Qs),actor_Qs[0].shape)
+            print( "valid_trans_mask", valid_trans_mask.shape,valid_trans_mask)
+            len_actor_Qs = len(actor_Qs)
+            for i in range(len_actor_Qs):
+                actor_Qs[i] = actor_Qs[i] * valid_trans_mask
+            actor_Qs = torch.cat(tuple(actor_Qs))
+            actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()/len_actor_Qs
             update_policy.critic_optimizer.zero_grad()
             update_policy.actor_optimizer.zero_grad()
             actor_loss.backward()
@@ -419,7 +422,7 @@ class MADDPG(Trainer):
 
             train_info['actor_loss'] = actor_loss
             train_info['actor_grad_norm'] = actor_grad_norm
-
+            train_info['update_actor'] =update_actor
         return train_info, new_priorities, idxes
 
     def prep_training(self):
