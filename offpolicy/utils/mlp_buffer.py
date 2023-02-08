@@ -57,7 +57,6 @@ class MlpReplayBuffer(object):
 
         :return: (np.ndarray) indexes in which the new transitions were placed.
         """
-        print("share type",type(share_obs))
         idx_range = None
         for p_id in self.policy_info.keys():
             idx_range = self.policy_buffers[p_id].insert(num_insert_steps,
@@ -67,6 +66,8 @@ class MlpReplayBuffer(object):
                                                          np.array(dones[p_id]), np.array(dones_env[p_id]),
                                                          np.array(valid_transition[p_id]),
                                                          np.array(avail_acts[p_id]), np.array(next_avail_acts[p_id]))
+            # print("fater idx range is ",idx_range)
+
         return idx_range
 
     def sample(self, batch_size):
@@ -112,7 +113,7 @@ class MlpPolicyBuffer(object):
         :use_avail_acts: (bool) whether to store what actions are available.
         :param use_reward_normalization: (bool) whether to use reward normalization.
         """
-        self.buffer_size = buffer_size
+        self.buffer_size = int(buffer_size)
         self.num_agents = num_agents
         self.use_same_share_obs = use_same_share_obs
         self.use_avail_acts = use_avail_acts
@@ -132,13 +133,11 @@ class MlpPolicyBuffer(object):
 
         self.obs = np.zeros(
             (self.buffer_size, self.num_agents, obs_shape[0]), dtype=np.float32)
-        print("buffer size is",self.buffer_size, self.num_agents, obs_shape)
-        print("self.use_same_share_obs",self.use_same_share_obs)
-        print("share_obs_shape",share_obs_shape)
-        if self.use_same_share_obs:
 
+        if self.use_same_share_obs:
             self.share_obs = np.zeros((self.buffer_size, share_obs_shape[0]), dtype=np.float32)
         else:
+            # print("share obs shape",share_obs_shape)
             self.share_obs = np.zeros((self.buffer_size, self.num_agents, share_obs_shape[0]), dtype=np.float32)
 
         self.next_obs = np.zeros_like(self.obs, dtype=np.float32)
@@ -183,11 +182,13 @@ class MlpPolicyBuffer(object):
 
         :return: (np.ndarray) indexes of the buffer the new transitions were placed in.
         """
-        print("")
+
         # obs: [step, episode, agent, dim]
         assert obs.shape[0] == num_insert_steps, ("different size!")
 
+        # print("self.current_i")
         if self.current_i + num_insert_steps <= self.buffer_size:
+            # print("self.current_i, self.current_i + num_insert_steps",self.current_i, self.current_i + num_insert_steps)
             idx_range = np.arange(self.current_i, self.current_i + num_insert_steps)
         else:
             num_left_steps = self.current_i + num_insert_steps - self.buffer_size
@@ -207,6 +208,7 @@ class MlpPolicyBuffer(object):
             self.next_avail_acts[idx_range] = next_avail_acts.copy()
 
         self.current_i = idx_range[-1] + 1
+        # print("self.current_i",self.current_i)
         self.filled_i = min(self.filled_i + len(idx_range), self.buffer_size)
 
         return idx_range
@@ -283,10 +285,19 @@ class PrioritizedMlpReplayBuffer(MlpReplayBuffer):
         """See parent class."""
         idx_range = super().insert(num_insert_steps, obs, share_obs, acts, rewards, next_obs, next_share_obs, dones,
                                    dones_env, valid_transition, avail_acts, next_avail_acts)
-        for idx in range(idx_range[0], idx_range[1]):
-            for p_id in self.policy_info.keys():
-                self._it_sums[p_id][idx] = self.max_priorities[p_id] ** self.alpha
-                self._it_mins[p_id][idx] = self.max_priorities[p_id] ** self.alpha
+        # print("idx_range is",idx_range)
+        if len(idx_range) ==1:
+            for idx in range(idx_range[0], idx_range[0]+1):
+                for p_id in self.policy_info.keys():
+                    # print("p_id",p_id)
+                    self._it_sums[p_id][idx] = self.max_priorities[p_id] ** self.alpha
+                    self._it_mins[p_id][idx] = self.max_priorities[p_id] ** self.alpha
+        else:
+            for idx in range(idx_range[0], idx_range[0] + 1):
+                for p_id in self.policy_info.keys():
+                    # print("p_id", p_id)
+                    self._it_sums[p_id][idx] = self.max_priorities[p_id] ** self.alpha
+                    self._it_mins[p_id][idx] = self.max_priorities[p_id] ** self.alpha
 
         return idx_range
 

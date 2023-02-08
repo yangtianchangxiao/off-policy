@@ -3,8 +3,10 @@ import numpy as np
 from itertools import chain
 import torch
 import time
+
 from offpolicy.utils.util import is_multidiscrete
 from offpolicy.runner.mlp.base_runner import MlpRunner
+
 
 class MPERunner(MlpRunner):
     def __init__(self, config):
@@ -13,7 +15,7 @@ class MPERunner(MlpRunner):
         self.collecter = self.shared_collect_rollout if self.share_policy else self.separated_collect_rollout
         # fill replay buffer with random actions
         self.finish_first_train_reset = False
-        num_warmup_episodes = max((int(self.batch_size//self.episode_length) + 1, self.args.num_random_episodes))
+        num_warmup_episodes = max((int(self.batch_size // self.episode_length) + 1, self.args.num_random_episodes))
         self.warmup(num_warmup_episodes)
         self.start = time.time()
         self.log_clear()
@@ -26,7 +28,7 @@ class MPERunner(MlpRunner):
         eval_infos['average_episode_rewards'] = []
 
         for _ in range(self.args.num_eval_episodes):
-            env_info = self.collecter( explore=False, training_episode=False, warmup=False)
+            env_info = self.collecter(explore=False, training_episode=False, warmup=False)
             for k, v in env_info.items():
                 eval_infos[k].append(v)
 
@@ -48,6 +50,7 @@ class MPERunner(MlpRunner):
 
         env = self.env if explore else self.eval_env
         n_rollout_threads = self.num_envs if explore else self.num_eval_envs
+
         if not explore:
             obs = env.reset()
             share_obs = obs.reshape(n_rollout_threads, -1)
@@ -57,10 +60,7 @@ class MPERunner(MlpRunner):
                 share_obs = self.share_obs
             else:
                 obs = env.reset()
-                print("obs tyep and shape",type(obs), obs.shape)
-                print("n_rollout_threads")
                 share_obs = obs.reshape(n_rollout_threads, -1)
-                print("share_obs.shape",share_obs.shape)
                 self.finish_first_train_reset = True
 
         # init
@@ -86,8 +86,8 @@ class MPERunner(MlpRunner):
             else:
                 # get actions with exploration noise (eps-greedy/Gaussian)
                 acts_batch, _ = policy.get_actions(obs_batch,
-                                                    t_env=self.total_env_steps,
-                                                    explore=explore)
+                                                   t_env=self.total_env_steps,
+                                                   explore=explore)
 
             if not isinstance(acts_batch, np.ndarray):
                 acts_batch = acts_batch.cpu().detach().numpy()
@@ -148,13 +148,13 @@ class MPERunner(MlpRunner):
                     self.train()
                     self.total_train_steps += 1
                     self.last_train_T = self.total_env_steps
-            
+
         average_episode_rewards = np.mean(np.sum(episode_rewards, axis=0))
         env_info['average_episode_rewards'] = average_episode_rewards
 
         return env_info
 
-    # for mpe-simple_speaker_listener 
+    # for mpe-simple_speaker_listener
     def separated_collect_rollout(self, explore=True, training_episode=True, warmup=False):
         """
         Collect a rollout and store it in the buffer. Each agent has its own policy.. Do training steps when appropriate.
@@ -180,13 +180,10 @@ class MPERunner(MlpRunner):
                 share_obs = self.share_obs
             else:
                 obs = env.reset()
-
                 share_obs = []
                 for o in obs:
-                    # share_obs.append(list(chain(*o)))
-                    share_obs.append(o)
-                share_obs = np.stack(share_obs, axis=0)
-                print("share_obs shape````````````", share_obs.shape)
+                    share_obs.append(list(chain(*o)))
+                share_obs = np.array(share_obs)
                 self.finish_first_train_reset = True
 
         agent_obs = []
@@ -249,10 +246,7 @@ class MPERunner(MlpRunner):
             next_obs, rewards, dones, infos = env.step(env_acts)
 
             episode_rewards.append(rewards)
-            print("dones is", dones)
-            dones_env = np.all(dones, axis=1).reshape(-1, 1)
-            print("dones_env is", dones_env)
-
+            dones_env = np.all(dones, axis=1)
 
             if explore and n_rollout_threads == 1 and np.all(dones_env):
                 next_obs = env.reset()
@@ -264,9 +258,8 @@ class MPERunner(MlpRunner):
 
             next_share_obs = []
             for no in next_obs:
-                next_share_obs.append(no)
-            next_share_obs = np.stack(next_share_obs, axis=0)
-            print("next share obs shape", next_share_obs.shape)
+                next_share_obs.append(list(chain(*no)))
+            next_share_obs = np.array(next_share_obs)
 
             next_agent_obs = []
             for agent_id in range(self.num_agents):
@@ -274,23 +267,18 @@ class MPERunner(MlpRunner):
                 for no in next_obs:
                     next_env_obs.append(no[agent_id])
                 next_env_obs = np.array(next_env_obs)
-                print("next_env_obs shape", next_env_obs.shape)
                 next_agent_obs.append(next_env_obs)
 
             for agent_id, p_id in zip(self.agent_ids, self.policy_ids):
-                # print("p_id",int(p_id[-1]))
-                int_p_id = int(p_id[-1])
                 step_obs[p_id] = np.expand_dims(agent_obs[agent_id], axis=1)
-                step_share_obs[p_id] = share_obs[:, int_p_id:int_p_id+1, :]
-                # print("share_obs[:,int(p_id[-1]),:] shape",share_obs[:, int(p_id[-1]):int(p_id[-1])+1, :].shape)
+                step_share_obs[p_id] = share_obs
                 step_acts[p_id] = np.expand_dims(acts[agent_id], axis=1)
-                # print("rewards is",rewards)
-                step_rewards[p_id] = np.expand_dims(rewards[:, agent_id:agent_id+1], axis=1)
+                step_rewards[p_id] = np.expand_dims(rewards[:, agent_id], axis=1)
                 step_next_obs[p_id] = np.expand_dims(next_agent_obs[agent_id], axis=1)
-                step_next_share_obs[p_id] = next_share_obs[:,int_p_id:int_p_id+1, :]
-                step_dones[p_id] = np.zeros_like(np.expand_dims(dones[:, agent_id:agent_id+1], axis=1))
+                step_next_share_obs[p_id] = next_share_obs
+                step_dones[p_id] = np.zeros_like(np.expand_dims(dones[:, agent_id], axis=1))
                 step_dones_env[p_id] = dones_env
-                valid_transition[p_id] = np.ones_like(np.expand_dims(dones[:, agent_id:agent_id+1], axis=1))
+                valid_transition[p_id] = np.ones_like(np.expand_dims(dones[:, agent_id], axis=1))
                 step_avail_acts[p_id] = None
                 step_next_avail_acts[p_id] = None
 
@@ -301,7 +289,6 @@ class MPERunner(MlpRunner):
             if explore:
                 self.obs = obs
                 self.share_obs = share_obs
-                # print("step share obs shape",step_share_obs.shape)
                 self.buffer.insert(n_rollout_threads,
                                    step_obs,
                                    step_share_obs,
@@ -349,7 +336,7 @@ class MPERunner(MlpRunner):
         for k, v in env_info.items():
             if len(v) > 0:
                 v = np.mean(v)
-                suffix_k = k if suffix is None else suffix + k 
+                suffix_k = k if suffix is None else suffix + k
                 print(suffix_k + " is " + str(v))
                 if self.use_wandb:
                     wandb.log({suffix_k: v}, step=self.total_env_steps)
@@ -361,7 +348,7 @@ class MPERunner(MlpRunner):
         self.env_infos = {}
 
         self.env_infos['average_episode_rewards'] = []
-    
+
     @torch.no_grad()
     def warmup(self, num_warmup_episodes):
         # fill replay buffer with enough episodes to begin training

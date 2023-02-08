@@ -184,7 +184,7 @@ class RecRunner(object):
         env_info = self.collecter(explore=True, training_episode=True, warmup=False)
         for k, v in env_info.items():
             self.env_infos[k].append(v)
-
+        print("start train")
         # train
         if ((self.num_episodes_collected - self.last_train_episode) / self.train_interval_episode) >= 1 or self.last_train_episode == 0:
             self.train()

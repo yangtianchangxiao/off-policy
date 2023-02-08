@@ -168,6 +168,12 @@ class MlpRunner(object):
         for k, v in env_info.items():
             self.env_infos[k].append(v)
 
+        # train
+        if ((self.num_episodes_collected - self.last_train_episode)) >= 1 or self.last_train_episode == 0:
+            self.train()
+            self.total_train_steps += 1
+            self.last_train_episode = self.num_episodes_collected
+
         # save
         if (self.total_env_steps - self.last_save_T) / self.save_interval >= 1:
             self.saver()
@@ -199,7 +205,7 @@ class MlpRunner(object):
                 sample = self.buffer.sample(self.batch_size)
 
             update = self.trainer.shared_train_policy_on_batch if self.use_same_share_obs else self.trainer.cent_train_policy_on_batch
-            
+
             train_info, new_priorities, idxes = update(p_id, sample)
             update_actor = train_info['update_actor']
 

@@ -8,16 +8,14 @@ import setproctitle
 import torch
 from offpolicy.config import get_config
 from offpolicy.utils.util import get_cent_act_dim, get_dim_from_space
-from offpolicy.envs.mpe.MPE_Env import MPEEnv
+# from offpolicy.envs.mpe.MPE_Env import MPEEnv
 from offpolicy.envs.env_wrappers import DummyVecEnv, SubprocVecEnv
+# import gym
 from offpolicy.envs.searchGrid import SearchGrid
-
 def make_train_env(all_args):
     def get_env_fn(rank):
         def init_env():
-            if all_args.env_name == "MPE":
-                env = MPEEnv(all_args)
-            elif all_args.env_name == "envDrones":
+            if all_args.env_name == "SearchGrid-v0":
                 env = SearchGrid()
             else:
                 print("Can not support the " +
@@ -35,11 +33,13 @@ def make_train_env(all_args):
 def make_eval_env(all_args):
     def get_env_fn(rank):
         def init_env():
-            if all_args.env_name == "MPE":
-                env = MPEEnv(all_args)
-            elif all_args.env_name == 'envDrones':
+            print()
+            if all_args.env_name == "SearchGrid-v0":
+                # env = MPEEnv(all_args)
+                # env = gym.make("SearchGrid-v0")
                 env = SearchGrid()
             else:
+
                 print("Can not support the " +
                       all_args.env_name + "environment.")
                 raise NotImplementedError
@@ -54,8 +54,8 @@ def make_eval_env(all_args):
 
 def parse_args(args, parser):
     parser.add_argument('--scenario_name', type=str,
-                        default='simple_spread', help="Which scenario to run on")
-    parser.add_argument("--num_landmarks", type=int, default=3)
+                        default='SearchGrid', help="Which scenario to run on")
+    parser.add_argument("--num_targets", type=int, default=5)
     parser.add_argument('--num_agents', type=int,
                         default=2, help="number of agents")
     parser.add_argument('--use_same_share_obs', action='store_false',
@@ -86,10 +86,9 @@ def main(args):
     # setup file to output tensorboard, hyperparameters, and saved models
     run_dir = Path(os.path.split(os.path.dirname(os.path.abspath(__file__)))[
                    0] + "/results") / all_args.env_name / all_args.scenario_name / all_args.algorithm_name / all_args.experiment_name
-
-    if not run_dir.exists():
-        os.makedirs(str(run_dir))
-
+    #
+    # if not run_dir.exists():
+    #     os.makedirs(str(run_dir))
     if all_args.use_wandb:
         # init wandb
         run = wandb.init(config=all_args,
@@ -143,15 +142,14 @@ def main(args):
     else:
         policy_info = {
             'policy_' + str(agent_id): {"cent_obs_dim": get_dim_from_space(env.share_observation_space[agent_id]),
+                                        # Attention: 2 is the num of agent
                                         "cent_act_dim": get_cent_act_dim(env.action_space),
                                         "obs_space": env.observation_space[agent_id],
                                         "share_obs_space": env.share_observation_space[agent_id],
                                         "act_space": env.action_space[agent_id]}
             for agent_id in range(num_agents)
         }
-
         def policy_mapping_fn(agent_id): return 'policy_' + str(agent_id)
-
     # choose algo
     if all_args.algorithm_name in ["rmatd3", "rmaddpg", "rmasac", "qmix", "vdn"]:
         from offpolicy.runner.rnn.mpe_runner import MPERunner as Runner

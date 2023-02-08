@@ -35,10 +35,10 @@ class Human(object):
 
 class SearchGrid(gym.Env):
     def __init__(self):
-        self.observation_space = [spaces.Box(low=0, high=1, shape=(4*50*50, )) for i in range (2)]
-        self.share_observation_space = [spaces.Box(low=0, high=1, shape=(4*50*50, )) for i in  range(2)]
+        self.observation_space = [spaces.Box(low=0, high=1, shape=(4*50*50,)) for i in range (2)]
+        self.share_observation_space = [spaces.Box(low=0, high=1, shape=(2*4*50*50,)) for i in  range(2)]
         self.action_space = [spaces.Discrete(4) for i in range(2)]
-        self.num_agents = 2
+        print("adfadsfaefwefaewfewfaef")
         self.init_param()
         self.seed()
         self.reset()
@@ -69,7 +69,6 @@ class SearchGrid(gym.Env):
         # print("observation",observation[0].shape)
         for i in range(len(observation)):
             observation[i]  = observation[i].flatten()
-        print("reset111111111111111111")
         return observation
         # return (observation[0])
 

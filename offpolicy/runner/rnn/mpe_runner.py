@@ -33,7 +33,8 @@ class MPERunner(RecRunner):
     @torch.no_grad() 
     def shared_collect_rollout(self, explore=True, training_episode=True, warmup=False):
         """
-        Collect a rollout and store it in the buffer. All agents share a single policy.
+        Collect a
+         .and store it in the buffer. All agents share a single policy.
         :param explore: (bool) whether to use an exploration strategy when collecting the episoide.
         :param training_episode: (bool) whether this episode is used for evaluation or training.
         :param warmup: (bool) whether this episode is being collected during warmup phase.
@@ -48,7 +49,7 @@ class MPERunner(RecRunner):
         env = self.env if training_episode or warmup else self.eval_env
 
         obs = env.reset()
-        print("obs.shape",obs.shape)
+        # print("obs.shape",obs.shape)
         rnn_states_batch = np.zeros((self.num_envs * self.num_agents, self.hidden_size), dtype=np.float32)
         last_acts_batch = np.zeros((self.num_envs * self.num_agents, policy.output_dim), dtype=np.float32)
 
@@ -110,7 +111,7 @@ class MPERunner(RecRunner):
 
         episode_obs[p_id][t] = obs
         episode_share_obs[p_id][t] = obs.reshape(self.num_envs, -1)
-
+        print("rnnnnnnnnn   nnnn")
         if explore:
             self.num_episodes_collected += self.num_envs
             # push all episodes collected in this rollout step to the buffer

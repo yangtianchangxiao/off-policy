@@ -229,7 +229,8 @@ def get_obs_shape(obs_space):
 
 def get_dim_from_space(space):
     if isinstance(space, Box):
-        dim = space.shape[0]
+        # print("4111111111111111111")
+        dim = space.shape[-1]
     elif isinstance(space, Discrete):
         dim = space.n
     elif isinstance(space, Tuple):

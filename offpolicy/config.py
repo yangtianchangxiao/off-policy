@@ -16,25 +16,25 @@ def get_config():
                         action='store_false', default=True)
     parser.add_argument('--n_training_threads', type=int,
                         default=1, help="Number of torch threads for training")
-    parser.add_argument('--n_rollout_threads', type=int,  default=2,
+    parser.add_argument('--n_rollout_threads', type=int,  default=1,
                         help="Number of parallel envs for training rollout")
     parser.add_argument('--n_eval_rollout_threads', type=int,  default=1,
                         help="Number of parallel envs for evaluating rollout")
     parser.add_argument('--num_env_steps', type=int,
-                        default=2000000, help="Number of env steps to train for")
-    parser.add_argument('--use_wandb', action='store_false', default=True,
+                        default=2e5, help="Number of env steps to train for")
+    parser.add_argument('--use_wandb', action='store_false', default=False,
                         help="Whether to use weights&biases, if not, use tensorboardX instead")
     parser.add_argument('--user_name', type=str, default="caox68983")
 
     # env parameters
-    parser.add_argument('--env_name', type=str, default="envDrones")
+    parser.add_argument('--env_name', type=str, default="SearchGrid-v0")
     parser.add_argument("--use_obs_instead_of_state", action='store_true',
                         default=False, help="Whether to use global state or concatenated obs")
 
     # replay buffer parameters
     parser.add_argument('--episode_length', type=int,
                         default=80, help="Max length for any episode")
-    parser.add_argument('--buffer_size', type=int, default=5000,
+    parser.add_argument('--buffer_size', type=int, default=2e4,
                         help="Max # of transitions that replay buffer can contain")
     parser.add_argument('--use_reward_normalization', action='store_true',
                         default=False, help="Whether to normalize rewards in replay buffer")
@@ -42,9 +42,9 @@ def get_config():
                         help="Whether to use popart to normalize the target loss")
     parser.add_argument('--popart_update_interval_step', type=int, default=2,
                         help="After how many train steps popart should be updated")
-                        
+
     # prioritized experience replay
-    parser.add_argument('--use_per', action='store_true', default=False,
+    parser.add_argument('--use_per', action='store_true', default=True,
                         help="Whether to use prioritized experience replay")
     parser.add_argument('--per_nu', type=float, default=0.9,
                         help="Weight of max TD error in formation of PER weights")
@@ -60,12 +60,12 @@ def get_config():
                         default=True, help="Whether to use centralized Q function")
     parser.add_argument('--share_policy', action='store_false',
                         default=False, help="Whether agents share the same policy")
-    parser.add_argument('--hidden_size', type=int, default=64,
+    parser.add_argument('--hidden_size', type=int, default=128,
                         help="Dimension of hidden layers for actor/critic networks")
-    parser.add_argument('--layer_N', type=int, default=1,
+    parser.add_argument('--layer_N', type=int, default=4,
                         help="Number of layers for actor/critic networks")
     parser.add_argument('--use_ReLU', action='store_false',
-                        default=True, help="Whether to use ReLU")
+                        default=False, help="Whether to use ReLU")
     parser.add_argument('--use_feature_normalization', action='store_false',
                         default=True, help="Whether to apply layernorm to the inputs")
     parser.add_argument('--use_orthogonal', action='store_false', default=True,

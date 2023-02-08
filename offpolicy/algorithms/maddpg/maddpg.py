@@ -339,7 +339,7 @@ class MADDPG(Trainer):
 
         train_info['critic_loss'] = critic_loss
         train_info['critic_grad_norm'] = critic_grad_norm
-
+        train_info['update_actor'] = update_actor
         # actor update
         if update_actor:
             for p in update_policy.critic.parameters():
@@ -360,6 +360,7 @@ class MADDPG(Trainer):
             valid_trans_mask = []
             # need to iterate through agents, but only formulate masks at each step
             for i in range(num_update_agents):
+                # print("num_update_agents",num_update_agents)
                 curr_mask_temp = copy.deepcopy(mask_temp)
                 # set the mask to 1 at locations where the action should come from the actor output
                 if isinstance(update_policy.act_dim, np.ndarray):
@@ -401,11 +402,13 @@ class MADDPG(Trainer):
             actor_update_cent_acts = mask * actor_cent_acts + (1 - mask) * to_torch(all_agent_cent_act_buffer).to(**self.tpdv)
             actor_Qs = update_policy.critic(all_agent_cent_obs, actor_update_cent_acts)
             # actor_loss = -actor_Qs.mean()
-            print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
-            print("actor qs",actor_Qs)
-            print( "valid_trans_mask", valid_trans_mask.shape)
-            actor_Qs = actor_Qs * valid_trans_mask
-            actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()
+            # print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
+            # print("actor qs",actor_Qs)
+            # print( "valid_trans_mask", valid_trans_mask.shape)
+            # actor_Qs = actor_Qs * valid_trans_mask
+            actor_Qs = torch.cat(tuple(actor_Qs))
+            # actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()
+            actor_loss = -(actor_Qs).sum()
             update_policy.critic_optimizer.zero_grad()
             update_policy.actor_optimizer.zero_grad()
             actor_loss.backward()

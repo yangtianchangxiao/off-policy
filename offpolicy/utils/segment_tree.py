@@ -7,6 +7,7 @@ def unique(sorted_array):
     :param sorted_array: (np.ndarray)
     :return:(np.ndarray) sorted_array without duplicate elements
     """
+    # print("sorted array",sorted_array)
     if len(sorted_array) == 1:
         return sorted_array
     left = sorted_array[:-1]
