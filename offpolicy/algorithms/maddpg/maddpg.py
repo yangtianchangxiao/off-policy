@@ -402,7 +402,6 @@ class MADDPG(Trainer):
             actor_update_cent_acts = mask * actor_cent_acts + (1 - mask) * to_torch(all_agent_cent_act_buffer).to(**self.tpdv)
             actor_Qs = update_policy.critic(all_agent_cent_obs, actor_update_cent_acts)
             # actor_loss = -actor_Qs.mean()
-<<<<<<< HEAD
             # print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
             # print("actor qs",actor_Qs)
             # print( "valid_trans_mask", valid_trans_mask.shape)
@@ -410,16 +409,21 @@ class MADDPG(Trainer):
             actor_Qs = torch.cat(tuple(actor_Qs))
             # actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()
             actor_loss = -(actor_Qs).sum()
-=======
-            print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
-            print("actor qs",len(actor_Qs),actor_Qs[0].shape)
-            print( "valid_trans_mask", valid_trans_mask.shape,valid_trans_mask)
+            # print("type of qs and mask", type(actor_Qs), type(valid_trans_mask))
+            # print("actor qs",len(actor_Qs),actor_Qs[0].shape)
+            # print( "valid_trans_mask", valid_trans_mask.shape,valid_trans_mask)
             len_actor_Qs = len(actor_Qs)
-            for i in range(len_actor_Qs):
-                actor_Qs[i] = actor_Qs[i] * valid_trans_mask
+            # print("len actor",len_actor_Qs)
+            # print("len valid maks", len(valid_trans_mask))
+            len_mask = len(valid_trans_mask)
+            agents_num = int(len_actor_Qs/len_mask)
+            for i in range(len_mask):
+                for j in range(agents_num):
+                # print("actor_Qs[i]",actor_Qs[i])
+                # print("valid_trans_mask",valid_trans_mask)
+                    actor_Qs[i] = actor_Qs[i*agents_num+j] * valid_trans_mask[i]
             actor_Qs = torch.cat(tuple(actor_Qs))
             actor_loss = -(actor_Qs).sum() / (valid_trans_mask).sum()/len_actor_Qs
->>>>>>> d35b4e20dbedb0bcbf83de97bff07a6bca501a4c
             update_policy.critic_optimizer.zero_grad()
             update_policy.actor_optimizer.zero_grad()
             actor_loss.backward()

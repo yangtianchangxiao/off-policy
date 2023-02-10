@@ -6,6 +6,8 @@ import socket
 import wandb
 import setproctitle
 import torch
+import sys
+sys.path.append(r"/home/home/off-policy")
 from offpolicy.config import get_config
 from offpolicy.utils.util import get_cent_act_dim, get_dim_from_space
 # from offpolicy.envs.mpe.MPE_Env import MPEEnv
@@ -174,10 +176,12 @@ def main(args):
               }
 
     total_num_steps = 0
-    runner = Runner(config=config)
+    log_dir_address = "/home"
+    runner = Runner(config=config, log_dir_address=log_dir_address)
     while total_num_steps < all_args.num_env_steps:
         total_num_steps = runner.run()
 
+    runner.record()
     env.close()
     if all_args.use_eval and (eval_env is not env):
         eval_env.close()

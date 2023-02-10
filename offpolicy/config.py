@@ -15,13 +15,13 @@ def get_config():
     parser.add_argument("--cuda_deterministic",
                         action='store_false', default=True)
     parser.add_argument('--n_training_threads', type=int,
-                        default=1, help="Number of torch threads for training")
-    parser.add_argument('--n_rollout_threads', type=int,  default=1,
+                        default=2, help="Number of torch threads for training")
+    parser.add_argument('--n_rollout_threads', type=int,  default=15,
                         help="Number of parallel envs for training rollout")
     parser.add_argument('--n_eval_rollout_threads', type=int,  default=1,
                         help="Number of parallel envs for evaluating rollout")
     parser.add_argument('--num_env_steps', type=int,
-                        default=2e5, help="Number of env steps to train for")
+                        default=1e5, help="Number of env steps to train for")
     parser.add_argument('--use_wandb', action='store_false', default=False,
                         help="Whether to use weights&biases, if not, use tensorboardX instead")
     parser.add_argument('--user_name', type=str, default="caox68983")
@@ -181,7 +181,7 @@ def get_config():
                         help="How many episodes to collect for each eval")
 
     # save parameters
-    parser.add_argument('--save_interval', type=int, default=100000,
+    parser.add_argument('--save_interval', type=int, default=2e4,
                         help="After how many episodes of training the policy model should be saved")
 
     # log parameters

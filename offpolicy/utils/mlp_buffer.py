@@ -195,14 +195,15 @@ class MlpPolicyBuffer(object):
             idx_range = np.concatenate((np.arange(self.current_i, self.buffer_size), np.arange(num_left_steps)))
 
         self.obs[idx_range] = obs.copy()
-        self.share_obs[idx_range] = share_obs.copy()
+        parallel_env_num = 15 # 15 is the number of parallel envs for training
+        self.share_obs[idx_range] = share_obs.copy().reshape(parallel_env_num,1,20000)
         self.acts[idx_range] = acts.copy()
-        self.rewards[idx_range] = rewards.copy()
+        self.rewards[idx_range] = rewards.copy().reshape(parallel_env_num,1,1)
         self.next_obs[idx_range] = next_obs.copy()
-        self.next_share_obs[idx_range] = next_share_obs.copy()
-        self.dones[idx_range] = dones.copy()
-        self.dones_env[idx_range] = dones_env.copy()
-        self.valid_transition[idx_range] = valid_transition.copy()
+        self.next_share_obs[idx_range] = next_share_obs.copy().reshape(parallel_env_num,1,20000)
+        self.dones[idx_range] = dones.copy().reshape(parallel_env_num,1,1)
+        self.dones_env[idx_range] = dones_env.copy().reshape(parallel_env_num,1)
+        self.valid_transition[idx_range] = valid_transition.copy().reshape(parallel_env_num,1,1)
         if self.use_avail_acts:
             self.avail_acts[idx_range] = avail_acts.copy()
             self.next_avail_acts[idx_range] = next_avail_acts.copy()

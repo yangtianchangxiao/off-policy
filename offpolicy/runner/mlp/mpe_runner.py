@@ -6,10 +6,11 @@ import time
 
 from offpolicy.utils.util import is_multidiscrete
 from offpolicy.runner.mlp.base_runner import MlpRunner
+from tensorboardX import SummaryWriter
 
 
 class MPERunner(MlpRunner):
-    def __init__(self, config):
+    def __init__(self, config, log_dir_address):
         """Runner class for the Multi-Agent Particle Env (MPE)  environment. See parent class for more information."""
         super(MPERunner, self).__init__(config)
         self.collecter = self.shared_collect_rollout if self.share_policy else self.separated_collect_rollout
@@ -19,6 +20,9 @@ class MPERunner(MlpRunner):
         self.warmup(num_warmup_episodes)
         self.start = time.time()
         self.log_clear()
+        self.reward_list = []
+        self.target_find_list = []
+        self.log_dir_address = log_dir_address
 
     @torch.no_grad()
     def eval(self):
@@ -47,7 +51,8 @@ class MPERunner(MlpRunner):
         env_info = {}
         p_id = "policy_0"
         policy = self.policies[p_id]
-
+        self.reward_list = []
+        self.target_find_list = []
         env = self.env if explore else self.eval_env
         n_rollout_threads = self.num_envs if explore else self.num_eval_envs
 
@@ -96,6 +101,17 @@ class MPERunner(MlpRunner):
             # env step and store the relevant episode information
             next_obs, rewards, dones, infos = env.step(env_acts)
 
+            # Record how many targets are found if dones is true
+            for i, row in enumerate(dones):
+                if True in row:
+                    # print("row",row)
+                    # print("i is",i)
+                    # print("infos",infos)
+                    if infos[i] >= 0:
+                        self.target_find_list.append(infos[i])
+            print("self reward list",self.reward_list)
+            for i in rewards:
+                self.reward_list.append(i)
             episode_rewards.append(rewards)
             dones_env = np.all(dones, axis=1)
 
@@ -142,18 +158,38 @@ class MPERunner(MlpRunner):
                                    step_next_avail_acts)
 
             # train
+            self.target_find_list.append()
             if training_episode:
+                # Record how many targets are found if dones is true
+                for i, row in enumerate(dones):
+                    if True in row:
+                        # print("row",row)
+                        # print("i is",i)
+                        # print("infos",infos)
+                        if infos[i] >= 0:
+                            self.target_find_list.append(infos[i])
+                print("self reward list", self.reward_list)
+                for i in rewards:
+                    self.reward_list.append(i)
+
                 self.total_env_steps += n_rollout_threads
                 if (self.last_train_T == 0 or ((self.total_env_steps - self.last_train_T) / self.train_interval) >= 1):
                     self.train()
                     self.total_train_steps += 1
                     self.last_train_T = self.total_env_steps
 
-        average_episode_rewards = np.mean(np.sum(episode_rewards, axis=0))
+        average_episode_rewards = np.mean(np.sum(episode_rewards, axis=0))/len(episode_rewards)
         env_info['average_episode_rewards'] = average_episode_rewards
 
         return env_info
 
+    def record(self):
+        with SummaryWriter(log_dir=self.log_dir_address, comment='Target found') as w:
+            for i in range(len(self.target_find_list)):
+                w.add_scalar('Targets found during training', self.target_find_list[i], i)
+            for i in range(len(self.reward_list)):
+                w.add_scalar('The change of reward', self.reward_list[i], i)
+        w.close()
     # for mpe-simple_speaker_listener
     def separated_collect_rollout(self, explore=True, training_episode=True, warmup=False):
         """
@@ -167,7 +203,8 @@ class MPERunner(MlpRunner):
         env_info = {}
         env = self.env if explore else self.eval_env
         n_rollout_threads = self.num_envs if explore else self.num_eval_envs
-
+        # self.reward_list = []
+        # self.target_find_list = []
         if not explore:
             obs = env.reset()
             share_obs = []
@@ -355,6 +392,7 @@ class MPERunner(MlpRunner):
         self.trainer.prep_rollout()
         warmup_rewards = []
         print("warm up...")
+        print("num_warmp_episodes")
         for _ in range(int(num_warmup_episodes // self.num_envs) + 1):
             env_info = self.collecter(explore=True, training_episode=False, warmup=True)
             warmup_rewards.append(env_info['average_episode_rewards'])

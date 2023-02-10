@@ -540,6 +540,7 @@ class SearchGrid(gym.Env):
         self.run_time = 2000  # Run run_time steps per game
         self.map_size = 50
         self.drone_num = 2
+        self.num_agents = self.drone_num # This is used in --n_rollout_threads, the number of parallel envs for training.
         self.view_range = 10
         self.tree_num = 3
         self.human_init_pos = []

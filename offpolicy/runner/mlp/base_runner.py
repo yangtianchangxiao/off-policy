@@ -168,11 +168,11 @@ class MlpRunner(object):
         for k, v in env_info.items():
             self.env_infos[k].append(v)
 
-        # train
-        if ((self.num_episodes_collected - self.last_train_episode)) >= 1 or self.last_train_episode == 0:
-            self.train()
-            self.total_train_steps += 1
-            self.last_train_episode = self.num_episodes_collected
+        # # train
+        # if ((self.num_episodes_collected - self.last_train_episode)) >= 1 or self.last_train_episode == 0:
+        #     self.train()
+        #     self.total_train_steps += 1
+        #     self.last_train_episode = self.num_episodes_collected
 
         # save
         if (self.total_env_steps - self.last_save_T) / self.save_interval >= 1:
