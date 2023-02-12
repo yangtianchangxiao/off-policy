@@ -23,6 +23,7 @@ class MPERunner(MlpRunner):
         self.reward_list = []
         self.target_find_list = []
         self.log_dir_address = log_dir_address
+        self.replay_buffer_before_training = 2
 
     @torch.no_grad()
     def eval(self):
@@ -101,17 +102,6 @@ class MPERunner(MlpRunner):
             # env step and store the relevant episode information
             next_obs, rewards, dones, infos = env.step(env_acts)
 
-            # Record how many targets are found if dones is true
-            for i, row in enumerate(dones):
-                if True in row:
-                    # print("row",row)
-                    # print("i is",i)
-                    # print("infos",infos)
-                    if infos[i] >= 0:
-                        self.target_find_list.append(infos[i])
-            print("self reward list",self.reward_list)
-            for i in rewards:
-                self.reward_list.append(i)
             episode_rewards.append(rewards)
             dones_env = np.all(dones, axis=1)
 
@@ -119,7 +109,7 @@ class MPERunner(MlpRunner):
                 next_obs = env.reset()
 
             if not explore and np.all(dones_env):
-                average_episode_rewards = np.mean(np.sum(episode_rewards, axis=0))
+                average_episode_rewards = np.mean(np.sum(episode_rewards, axis=0))/self.episode_length
                 env_info['average_episode_rewards'] = average_episode_rewards
                 return env_info
 
@@ -282,6 +272,8 @@ class MPERunner(MlpRunner):
             # env step and store the relevant episode information
             next_obs, rewards, dones, infos = env.step(env_acts)
 
+
+
             episode_rewards.append(rewards)
             dones_env = np.all(dones, axis=1)
 
@@ -341,6 +333,19 @@ class MPERunner(MlpRunner):
 
             # train
             if training_episode:
+
+                # Record how many targets are found if dones is true
+                for i, row in enumerate(dones):
+                    if True in row:
+                        # print("row",row)
+                        # print("i is",i)
+                        # print("infos",infos)
+                        if infos[i] >= 0:
+                            self.target_find_list.append(infos[i])
+                print("self reward list", self.reward_list)
+                for i in rewards:
+                    self.reward_list.append(i)
+
                 self.total_env_steps += n_rollout_threads
                 if (self.last_train_T == 0 or ((self.total_env_steps - self.last_train_T) / self.train_interval) >= 1):
                     self.train()

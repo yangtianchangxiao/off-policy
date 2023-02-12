@@ -299,6 +299,8 @@ class RecRunner(object):
                 os.makedirs(actor_save_path)
             torch.save(policy_actor.state_dict(),
                        actor_save_path + '/actor.pt')
+            print("actor save path is",actor_save_path)
+            print("critic save path is",critic_save_path)
 
     def save_q(self):
         """Save all policies to the path specified by the config. Used for QMix and VDN."""
